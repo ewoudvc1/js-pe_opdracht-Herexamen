@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>project interactive websites</title>
+    </head>
+    <body>
+        <!-- Layout van: https://getbootstrap.com/docs/5.0/getting-started/introduction/ --> 
+
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <div>
+                    <div >
+                        <h1 class="h1">Registreer</h1>
+                        <p>Meld je aan bij Anoroc services, wij bescheremen jou software tegen malware!</p>
+                    </div>
+                </div>
+                <form class="row g-3" name="Form">
+        
+                    <div class="col-md-6">
+                        <label for="inputVoornaam" class="form-label">Voornaam</label>
+                        <input name="Voornaam" type="text" class="form-control" id="inputVoornaam" placeholder="Uw voornaam">
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label for="inputNaam" class="form-label">Naam</label>
+                        <input name="Naam" type="text" class="form-control" id="inputNaam" placeholder="Uw naam">
+                    </div>
+        
+                    <div class ="col-md-6">
+                        <label for="inputGebruikersnaam" class="form-label">Gebruikersnaam</label>
+                        <div class="input-group">         
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input name="Gebruikersnaam" type="text" class="form-control" placeholder="u911236" id="inputGebruikersnaam" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label for="inputEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="mail@example.be">
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label for="inputwachtwoord" class="form-label">Wachtwoord</label>
+                        <input type="password" class="form-control" id="inpuWachtwoord">
+                        <small class= "text-muted">Je wachtwoord moet minstens 8 tekens lang zijn</small>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label for="inputHerhaalWachtwoord" class="form-label">Herhaal wachtwoord</label>
+                        <input type="password" class="form-control" id="inputHerhaalWachtwoord">
+                    </div>
+        
+                    <div class="col-12">
+                        <label for="inputAdres" class="form-label">Adres</label>
+                        <input naam="Adres" type="text" class="form-control" id="inputAdres" placeholder="Uw adres en huisnummer">
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Land</label>
+                        <select naam="Land" id="inputLand" class="form-select">
+                          <option selected></option> 
+                          <option>Albanië</option>
+                          <option>Andorra La Vella</option>
+                          <option>Armenië</option>
+                          <option>Azarbeidzjan</option>
+                          <option>België</option>
+                          <option>Bosnië en Herzegovina</option>
+                          <option>Bulgaije</option>
+                          <option>Cyprus</option> 
+                          <option>Denemarken</option>
+                          <option>Duitsland</option> 
+                          <option>Estland</option>
+                          <option>Finland</option>
+                          <option>Fankrijk</option> 
+                          <option>Georgië</option>
+                          <option>GriekenLand</option>
+                          <option>Hongarije</option>
+                          <option>Ierland</option>
+                          <option>Ijsland</option>
+                          <option>Italië</option>
+                          <option>Kazachstan</option>
+                          <option>Kosovo</option>
+                          <option>Kroatië</option>
+                          <option>Letland</Option>
+                          <option>Liechtenstein</option>
+                          <option>Litouwen</option>                  
+                          <option>Luxemburg</option>
+                          <option>Malta</option>
+                          <option>Moldavië</option>
+                          <option>Monaco</option>
+                          <option>Montenegro</option>
+                          <option>Nederland</option>
+                          <option>Noord-Macedonië</option>
+                          <option>Noorwegen</option>
+                          <option>Oekraïne</option>
+                          <option>Oostenrijk</option> 
+                          <option>Polen</option>
+                          <option>Portugal</option>
+                          <option>Roemenië</option>
+                          <option>Rusland</option>
+                          <option>San Marino</option>
+                          <option>Servië</option>
+                          <option>Sloveië</option>   
+                          <option>Slowakije</option>
+                          <option>Spanje</option> 
+                          <option>Tjechië</option>
+                          <option>Turkije</option>
+                          <option>Vaticaanstad</option>                    
+                          <option>Verenigd Koninkrijk</option>
+                          <option>Wit-Rusland</option>   
+                          <option>Zweden</option> 
+                          <option>Zwitserland</option>
+                        </select>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Provincie</label>
+                        <select naam="Provincie" id="inputProvincie" class="form-select">
+                          <option selected>Kies een provincie</option>
+                          <option>Antwerpen</option>
+                          <option>Henegouwen</option>
+                          <option>Limburg</option>
+                          <option>Luik</option>
+                          <option>Luxemburg</option>
+                          <option>Namen</option>
+                          <option>Oost-Vlaanderen</option>
+                          <option>Vlaams-Brabant</option>
+                          <option>Waals-Brabant</option>
+                          <option>West-Vlaanderen</option>                 
+                        </select>
+                    </div>
+        
+                    <div class="col-md-2">
+                        <label for="inputPostcode" class="form-label">Postcode</label>
+                        <select id="inputPostcode" class="form-select">
+                            <option>2000</option>
+                            <option>2018</option>
+                            <option>2020</option>
+                            <option>2030</option>
+                            <option>2040</option>
+                            <option>2050</option>
+                            <option>2060</option>
+                            <option>2070</option>
+                            <option>2100</option>
+                            <option>2110</option>
+                            <option>2140</option>
+                            <option>2150</option>
+                            <option>2160</option>
+                            <option>2170</option>
+                            <option>2180</option>
+                            <option>2200</option>
+                            <option>2220</option>
+                            <option>2221</option>
+                            <option>2222</option>
+                            <option>2223</option>
+                            <option>2230</option>
+                            <option>2235</option>
+                            <option>2240</option>
+                            <option>2242</option>
+                            <option>2243</option>
+                            <option>2250</option>
+                            <option>2260</option>
+                            <option>2270</option>
+                            <option>2275</option>
+                            <option>2280</option>
+                            <option>2288</option>
+                            <option>2290</option>
+                            <option>2300</option>
+                            <option>2310</option>
+                            <option>2320</option>
+                            <option>2321</option>
+                            <option>2322</option>
+                            <option>2323</option>
+                            <option>2328</option>
+                            <option>2330</option>
+                            <option>2340</option>
+                            <option>2350</option>
+                            <option>2360</option>
+                            <option>2370</option>
+                            <option>2380</option>
+                            <option>2381</option>
+                            <option>2382</option>
+                            <option>2387</option>
+                            <option>2390</option>
+                            <option>2400</option>
+                            <option>2430</option>
+                            <option>2431</option>
+                            <option>2440</option>
+                            <option>2450</option>
+                            <option>2460</option>
+                            <option>2470</option>
+                            <option>2480</option>
+                            <option>2490</option>
+                            <option>2491</option>
+                            <option>2500</option>
+                            <option>2520</option>
+                            <option>2530</option>
+                            <option>2531</option>
+                            <option>2540</option>
+                            <option>2547</option>
+                            <option>2550</option>
+                            <option>2560</option>
+                            <option>2570</option>
+                            <option>2580</option>
+                            <option>2590</option>
+                            <option>2600</option>
+                            <option>2610</option>
+                            <option>2620</option>
+                            <option>2627</option>
+                            <option>2630</option>
+                            <option>2640</option>
+                            <option>2650</option>
+                            <option>2660</option>
+                            <option>2800</option>
+                            <option>2801</option>
+                            <option>2811</option>
+                            <option>2820</option>
+                            <option>2830</option>
+                            <option>2840</option>
+                            <option>2845</option>
+                            <option>2850</option>
+                            <option>2860</option>
+                            <option>2861</option>
+                            <option>2870</option>
+                            <option>2880</option>
+                            <option>2890</option>
+                            <option>2900</option>
+                            <option>2910</option>
+                            <option>2920</option>
+                            <option>2930</option>
+                            <option>2940</option>
+                            <option>2950</option>
+                            <option>2960</option>
+                            <option>2970</option>
+                            <option>2980</option>
+                            <option>2990</option>
+                            
+                        </select>
+                    </div>
+        
+                    <div>
+                        <hr />
+                    </div>
+                    
+                    <div class= "col-md-4" style="width: auto;">
+        
+                        <div >
+                            <h3>Hou me op de hoogte</h3>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkboxNieuwsbrief">
+                            <label class="form-check-label" for="checkboxNieuwsbrief">
+                              Inschrijven voor onze nieuwsbrief
+                            </label>
+                        </div>
+        
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkboxVoorwaarde" checked>
+                            <label class="form-check-label" for="checkboxVoorwaarde">
+                              IK ga akoord met de algemene <br> voorwaarden.
+                            </label>
+                        </div>
+        
+                    </div>
+        
+                    <div class= "col-md-4 ps-5" style="width: auto;" id="betalingswijze">
+                        <div >
+                            <h3>Betaling</h3>
+                        </div>
+            
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioBetalen" id="rbBankingApp" checked>
+                            <label class="form-check-label" for="rbBankingApp">
+                              Banking app
+                            </label>
+                          </div>
+        
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioBetalen" id="rbOverschrijving" >
+                            <label class="form-check-label" for="rbOverschrijving">
+                              Overschrijving
+                            </label>
+                          </div>
+        
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioBetalen" id="rbVisaCard">
+                            <label class="form-check-label" for="rbVisaCard">
+                              Visa Card
+                            </label>
+                          </div>
+        
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioBetalen" id="rbPayPal">
+                            <label class="form-check-label" for="rbPayPal">
+                              PayPal
+                            </label>
+                          </div>       
+                    </div>
+                          
+                    <div>
+                        <hr/>
+                    </div>
+        
+                    <div class="mx-auto px-3 mb-5 " style="width: auto;">
+                        <button type="button" style="width: 500px;" class="btn btn-primary" onclick="valedatieForum()">       Wave your magic wand       </button>
+                    </div>
+        
+                </form>
+              </div>
+
+              <div class="col">
+                
+                <div class="alert alert-danger" role="alert" id="alert1">
+                  <h4>Yikes, errors..</h4>
+                  <p id="textErrors"></p>
+                </div>
+
+                <div class="alert alert-success" role="alert" id="alert2">
+                  <h4>Goed gedaan!</h4>
+                  <p>Aww yeah, je werd geregistreerd</p>
+                </div>
+
+                <div class="alert alert-info" role="alert" id="alert3">
+                  <h4>betalingswijze</h4>
+                  <div id="textAlert3"> </div>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+
+          <script>
+           
+
+            document.getElementById("textErrors").innerHTML = errors;
+
+            document.getElementById("alert1").innerHTML.style.display = "none";
+            document.getElementById("alert2").innerHTML.style.display = "none";
+            document.getElementById("alert3").innerHTML.style.display = "none";
+              
+            function valedatieForum()
+            {
+              let errors = new Array();
+              
+              let veld = document.getElementById('inputVoornaam').value;
+              melding = "Het veld voornaam is vereist.";
+              checkEmptyField(veld, melding);
+              
+              let veld = document.getElementById('inputNaam').value;
+              melding = "Het veld naam is vereist.";
+              checkEmptyField(veld, melding);
+
+              let veld = document.getElementById('inputGebruikersnaam').value;
+              melding = "Het veld gebruikersnaam is vereist.";
+              checkEmptyField(veld, melding);
+
+              let veld = document.getElementById('inputAdres').value;
+              melding = "Het veld adres is vereist.";
+              checkEmptyField(veld, melding);
+
+              let veld = document.getElementById('inputLand').value;
+              melding = "selecteer een land.";
+              checkEmptyField(veld, melding);
+
+              let veld = document.getElementById('inputProvincie').value;
+              melding = "Selecteer een provincie.";
+              checkEmptyField(veld, melding);
+              
+              let emailadres = document.getElementById('inputEmail').value;
+              validateEmail(emailadres);
+
+              let emailControl = valedatieForum(emailadres);
+
+              if(emailControl == false) 
+              {
+                errors.push("E-mailaders is niet correct.");
+              }
+
+              ControleWachtwoord();
+
+              let veld = document.getElementById('textAlert3');
+
+              let text = validatePayment(veld);
+
+              let veld = document.getElementById('inputPostcode');
+
+              checkPC(veld);
+
+              if ( document.getElementById('checkboxVoorwaarde').checked == false)
+              {
+                errors.push("ga akoord met de algemene voorwaarde.");
+              }
+
+              
+
+              //https://www.freecodecamp.org/news/check-if-javascript-array-is-empty-or-not-with-length/
+
+              if (errors.length == 0 )
+              {
+                document.getElementById("alert2").innerHTML.style.display = "block";
+                document.getElementById("alert3").innerHTML.style.display = "block";
+              }
+              else
+              {
+                document.getElementById("alert1").innerHTML.style.display = "block";
+              }
+              
+            }
+
+            function checkEmptyField(veld, melding)
+            {
+              if(veld === '')
+              {                
+                errors.push(melding);
+              }
+            }
+
+            function validateEmail(emailadres)
+            {
+             // https://www.w3schools.com/js/js_string_methods.asp
+              
+              emailadres=emailadres.trim();
+
+              let correct
+
+              if( emailadres.indexOf('@') != -1 )
+              {
+                let domein = emailadres.substr(emailadres.indexOf('@'))
+                let gebruikersnaamEmail = emailadres.replace('@' + domein,'')
+
+                if ((gebruikersnaamEmail.lengt() < 1) || (gebruikersnaamEmail.charAt(0) == '.') || (gebruikersnaamEmail.charAt(0) == '-') )
+                {
+                  correct = false;
+                } 
+                else
+                {
+                  //https://stackoverflow.com/questions/9862761/how-to-check-if-character-is-a-letter-in-javascript?answertab=oldest#tab-top
+                  //https://stackoverflow.com/questions/175739/built-in-way-in-javascript-to-check-if-a-string-is-a-valid-number
+                  if((isNaN(domein.charAt(0)) == false) || (domein.charAt(0).match(/[a-zA-z]/) == true))
+                  {
+                      correct = true;
+                  }
+                  else
+                  {
+                      correct = false;
+                  }
+                }
+              }
+              else
+              {
+                correct = false;
+              }
+
+             return correct;
+
+            }
+
+            function ControleWachtwoord()
+            {
+              var wachtwoord1 = document.getElementById('inpuWachtwoord').value;
+              var wachtwoord2 = document.getElementById('inputHerhaalWachtwoord').value;
+
+              if(wachtwoord1 === '')
+              {                
+                errors.push("Wachtwoord moet ingevuld zijn");
+              }
+
+              if(wachtwoord1.lengt() != 7 )
+              {
+                errors.push("het wachtwoord moet langer zijn dan 7 characters.");
+              }
+
+              if(wachtwoord2 === '')
+              {                
+                errors.push("Herhaal wachtwoord moet ingevuld zijn");
+              }
+
+              if(wachtwoord1 != wachtwoord2)
+              {
+                errors.push("Herhaal wachtwoord stemt niet overeen met orgineel wachtwoord.")
+              }
+            }
+
+            function validatePayment(veld)
+            {
+              
+              let text;
+
+              if(document.getElementById("rbBankingApp").checked == true)
+              {
+                text ="banking app.";
+              }
+              if(document.getElementById("rbOverschrijving").checked == true)
+              {
+                text ="overschrijving.";
+              }
+              if(document.getElementById("rbVisaCard").checked == true)
+              {
+                text ="visa card.";
+              }
+              if(document.getElementById("rbPayPal").checked == true)
+              {
+                text ="paypal.";
+              }
+
+              veld.innerHTML = "Je betalingswijze is " + text;
+            }
+
+            function checkPC(veld)
+            {
+              if(veld == "" )
+              {
+                errors.push( "Het veld postcode is vereist.")
+              }
+              else
+              {
+                if(veld > 1000 && veld < 9999)
+                {
+                  errors.push("De waarde van postcode moet tussen 1000 en 9999 liggen.")
+                }
+              }
+            }
+
+            // https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp 
+
+
+            // var alert1 = document.getElementById("alert1");
+            //   alert1.style.display = "none";
+            // let alert2 = document.getElementById("alert2");
+            //   alert2.style.display = "none";
+            // let alert3 = document.getElementById("alert3");
+            //   alert3.style.display = "none";
+
+            // function valedatieForum() {
+              
+            //   if(document.forms["Form"]["voornaam"].value == "")
+            //   {
+            //     errors.push("Het veld voornaam is vereist");
+            //   }
+              
+            //   if(getElementById("inputNaam") == "")
+            //   {
+            //     errors.push("Het veld naam is vereist");
+            //   }
+            //   let x = document.forms["Form"]["Gebruikersnaam"].value;
+            //   if(x == "")
+            //   {
+            //     errors.push("Het veld gebruikersnaam is vereist");
+            //   }
+            //   let x = document.forms["Form"]["Adres"].value;
+            //   if(x == "")
+            //   {
+            //     errors.push("Het veld adres is vereist");
+            //   }
+            //   let x = document.forms["Form"]["Land"].value;
+            //   if(x == "Kies een land")
+            //   {
+            //     errors.push("Het veld land is vereist");
+            //   }
+            //   let x = document.forms["Form"]["Provincie"].value;
+            //   if(x == "Kies een provincie")
+            //   {
+            //     errors.push("Het veld provincie is vereist");
+            //   }    
+
+              
+              // if(errors.length >= 1 )
+              // {
+              //   alert1.style.display = "block";
+              // }  
+              //}           
+            
+
+                    
+          </script>            
+    </body>
+</html>
